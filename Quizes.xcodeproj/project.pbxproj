@@ -12,7 +12,6 @@
 		886819EC29F5ABDF00622A0B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886819EB29F5ABDF00622A0B /* ContentView.swift */; };
 		886819EE29F5ABE000622A0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 886819ED29F5ABE000622A0B /* Assets.xcassets */; };
 		886819F129F5ABE000622A0B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 886819F029F5ABE000622A0B /* Preview Assets.xcassets */; };
-		886819F929F5AC2200622A0B /* ObservablePerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886819F829F5AC2200622A0B /* ObservablePerson.swift */; };
 		88681A0129F5AC2F00622A0B /* SheetQuiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886819FB29F5AC2F00622A0B /* SheetQuiz.swift */; };
 		88681A0229F5AC2F00622A0B /* MenuQuiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886819FC29F5AC2F00622A0B /* MenuQuiz.swift */; };
 		88681A0329F5AC2F00622A0B /* AlertQuiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886819FD29F5AC2F00622A0B /* AlertQuiz.swift */; };
@@ -45,6 +44,8 @@
 		88681A3A29F5AC6600622A0B /* StackQuiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88681A3229F5AC6600622A0B /* StackQuiz.swift */; };
 		88681A3B29F5AC6600622A0B /* LazyVStackQuiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88681A3329F5AC6600622A0B /* LazyVStackQuiz.swift */; };
 		88681A3E29F5AC7200622A0B /* PreviewQuiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88681A3D29F5AC7200622A0B /* PreviewQuiz.swift */; };
+		886BA9ED29F6B90500505F7C /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886BA9EC29F6B90500505F7C /* Person.swift */; };
+		886BA9EF29F6B94800505F7C /* QuizesVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886BA9EE29F6B94800505F7C /* QuizesVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,7 +55,6 @@
 		886819EB29F5ABDF00622A0B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		886819ED29F5ABE000622A0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		886819F029F5ABE000622A0B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		886819F829F5AC2200622A0B /* ObservablePerson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservablePerson.swift; sourceTree = "<group>"; };
 		886819FB29F5AC2F00622A0B /* SheetQuiz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SheetQuiz.swift; sourceTree = "<group>"; };
 		886819FC29F5AC2F00622A0B /* MenuQuiz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuQuiz.swift; sourceTree = "<group>"; };
 		886819FD29F5AC2F00622A0B /* AlertQuiz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertQuiz.swift; sourceTree = "<group>"; };
@@ -87,6 +87,8 @@
 		88681A3229F5AC6600622A0B /* StackQuiz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackQuiz.swift; sourceTree = "<group>"; };
 		88681A3329F5AC6600622A0B /* LazyVStackQuiz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LazyVStackQuiz.swift; sourceTree = "<group>"; };
 		88681A3D29F5AC7200622A0B /* PreviewQuiz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewQuiz.swift; sourceTree = "<group>"; };
+		886BA9EC29F6B90500505F7C /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		886BA9EE29F6B94800505F7C /* QuizesVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizesVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 				886819E929F5ABDF00622A0B /* QuizesApp.swift */,
 				886819EB29F5ABDF00622A0B /* ContentView.swift */,
 				886819F729F5AC2200622A0B /* Models */,
+				886BA9F029F6B9B400505F7C /* ViewModels */,
 				886819FA29F5AC2F00622A0B /* Popups */,
 				88681A0729F5AC3D00622A0B /* Forms & Lists */,
 				88681A2229F5AC5500622A0B /* Special */,
@@ -152,7 +155,7 @@
 		886819F729F5AC2200622A0B /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				886819F829F5AC2200622A0B /* ObservablePerson.swift */,
+				886BA9EC29F6B90500505F7C /* Person.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -223,6 +226,14 @@
 				88681A3D29F5AC7200622A0B /* PreviewQuiz.swift */,
 			);
 			path = Preview;
+			sourceTree = "<group>";
+		};
+		886BA9F029F6B9B400505F7C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				886BA9EE29F6B94800505F7C /* QuizesVM.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,13 +315,14 @@
 				88681A3529F5AC6600622A0B /* LazyHGridQuiz.swift in Sources */,
 				88681A0529F5AC2F00622A0B /* ConfirmationDialogQuiz.swift in Sources */,
 				88681A1B29F5AC3D00622A0B /* FormQuiz.swift in Sources */,
+				886BA9ED29F6B90500505F7C /* Person.swift in Sources */,
 				88681A3429F5AC6600622A0B /* BorderQuiz.swift in Sources */,
 				88681A0229F5AC2F00622A0B /* MenuQuiz.swift in Sources */,
 				886819EC29F5ABDF00622A0B /* ContentView.swift in Sources */,
 				88681A1E29F5AC3D00622A0B /* ListQuiz.swift in Sources */,
 				88681A3E29F5AC7200622A0B /* PreviewQuiz.swift in Sources */,
-				886819F929F5AC2200622A0B /* ObservablePerson.swift in Sources */,
 				886819EA29F5ABDF00622A0B /* QuizesApp.swift in Sources */,
+				886BA9EF29F6B94800505F7C /* QuizesVM.swift in Sources */,
 				88681A1C29F5AC3D00622A0B /* NavigationQuiz.swift in Sources */,
 				88681A2729F5AC5500622A0B /* GroupBoxQuiz.swift in Sources */,
 				88681A3A29F5AC6600622A0B /* StackQuiz.swift in Sources */,

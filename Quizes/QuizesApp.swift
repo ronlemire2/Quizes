@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct QuizesApp: App {
+    @StateObject var qvm = QuizesVM()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(qvm)
         }
     }
 }
