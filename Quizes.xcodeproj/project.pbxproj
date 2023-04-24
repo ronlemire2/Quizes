@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		884C443A29F5FE8300CA12FB /* ArrayQuiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884C443929F5FE8300CA12FB /* ArrayQuiz.swift */; };
 		886819EA29F5ABDF00622A0B /* QuizesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886819E929F5ABDF00622A0B /* QuizesApp.swift */; };
 		886819EC29F5ABDF00622A0B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886819EB29F5ABDF00622A0B /* ContentView.swift */; };
 		886819EE29F5ABE000622A0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 886819ED29F5ABE000622A0B /* Assets.xcassets */; };
@@ -47,6 +48,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		884C443929F5FE8300CA12FB /* ArrayQuiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayQuiz.swift; sourceTree = "<group>"; };
 		886819E629F5ABDF00622A0B /* Quizes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quizes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		886819E929F5ABDF00622A0B /* QuizesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizesApp.swift; sourceTree = "<group>"; };
 		886819EB29F5ABDF00622A0B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,6 +100,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		884C443B29F5FE8900CA12FB /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				884C443929F5FE8300CA12FB /* ArrayQuiz.swift */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
 		886819DD29F5ABDF00622A0B = {
 			isa = PBXGroup;
 			children = (
@@ -150,11 +160,11 @@
 		886819FA29F5AC2F00622A0B /* Popups */ = {
 			isa = PBXGroup;
 			children = (
+				886819FD29F5AC2F00622A0B /* AlertQuiz.swift */,
+				886819FF29F5AC2F00622A0B /* ConfirmationDialogQuiz.swift */,
 				886819FB29F5AC2F00622A0B /* SheetQuiz.swift */,
 				886819FC29F5AC2F00622A0B /* MenuQuiz.swift */,
-				886819FD29F5AC2F00622A0B /* AlertQuiz.swift */,
 				886819FE29F5AC2F00622A0B /* DisclosureGroupQuiz.swift */,
-				886819FF29F5AC2F00622A0B /* ConfirmationDialogQuiz.swift */,
 				88681A0029F5AC2F00622A0B /* PopoverQuiz.swift */,
 			);
 			path = Popups;
@@ -202,6 +212,7 @@
 				88681A3129F5AC6600622A0B /* DividerQuiz.swift */,
 				88681A3229F5AC6600622A0B /* StackQuiz.swift */,
 				88681A3329F5AC6600622A0B /* LazyVStackQuiz.swift */,
+				884C443B29F5FE8900CA12FB /* Swift */,
 			);
 			path = Layout;
 			sourceTree = "<group>";
@@ -310,6 +321,7 @@
 				88681A2129F5AC3D00622A0B /* BindingQuiz.swift in Sources */,
 				88681A2829F5AC5500622A0B /* ScrollViewQuiz.swift in Sources */,
 				88681A0329F5AC2F00622A0B /* AlertQuiz.swift in Sources */,
+				884C443A29F5FE8300CA12FB /* ArrayQuiz.swift in Sources */,
 				88681A1529F5AC3D00622A0B /* ImageQuiz.swift in Sources */,
 				88681A2929F5AC5500622A0B /* ProgressViewQuiz.swift in Sources */,
 				88681A0429F5AC2F00622A0B /* DisclosureGroupQuiz.swift in Sources */,
