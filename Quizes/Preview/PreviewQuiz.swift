@@ -13,21 +13,21 @@ struct PreviewQuiz: View {
     }
 }
 
-//struct PreviewQuiz_Previews: PreviewProvider {
-//    static var previews: some View {
-//        PreviewQuiz()
-//    }
-//}
-
-
+/*
 struct PreviewQuiz_Previews: PreviewProvider {
-    static var qvm = QuizesVM()
-    
     static var previews: some View {
         PreviewQuiz()
-            .environmentObject(qvm)
             .preferredColorScheme(.dark)
             .previewDevice(PreviewDevice(rawValue: "iPhone 13 Pro Max"))
             .previewDisplayName("iPhone 13 Pro Max Dark Mode")
     }
 }
+*/
+
+struct PreviewQuiz_Previews: PreviewProvider {
+    static var previews: some View {
+        PreviewQuiz()
+    }
+}
+
+

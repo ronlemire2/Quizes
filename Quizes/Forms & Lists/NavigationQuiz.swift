@@ -15,6 +15,8 @@ struct NavigationQuiz: View {
 
 /*
 struct NavigationQuiz: View {
+    @State private var readyToNavigate : Bool = false
+    
     var body: some View {
         NavigationStack {
             VStack {
@@ -27,6 +29,15 @@ struct NavigationQuiz: View {
                                 Text("Item \(itemNumber)")
                                     .padding()
                             }
+                        }
+                    }
+                    Section("Button Navigation") {
+                        // https://stackoverflow.com/questions/73036878/navigationlink-isactive-deprecated
+                        Button {
+                            //Code here before changing the bool value
+                            readyToNavigate = true
+                        } label: {
+                            Text("Go to Detail View")
                         }
                     }
                 }
@@ -54,10 +65,14 @@ struct NavigationQuiz: View {
                         Text("Edit")
                     }
             )
+            .navigationDestination(isPresented: $readyToNavigate) {
+                DetailView(itemNumber: 0)
+            }
         }
     }
 }
-
+*/
+ 
 struct DetailView: View {
     var itemNumber: Int
     
@@ -67,7 +82,7 @@ struct DetailView: View {
         }
     }
 }
- */
+
 
 struct NavigationQuiz_Previews: PreviewProvider {
     static var previews: some View {
